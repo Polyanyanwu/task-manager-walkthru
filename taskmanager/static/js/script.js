@@ -22,7 +22,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Initialize modals
     let modals = document.querySelectorAll('.modal');
-    options = {"opacity":0.5};
+    options = {"opacity":0.5,
+                "dismissible": true};
     let instances = M.Modal.init(modals, options);
     // instances.open();
 });
